@@ -8,8 +8,8 @@ import Stories from "./pages/stories"
 import Contact from './pages/contact';
 import Poetry from './pages/poetry';
 import News from './pages/news';
-import Navbar from './componets/Essestials/navbar';
-import Footer from './componets/Essestials/Footer';
+import Navbar from './componets/Essentials/navbar';
+import Footer from './componets/Essentials/Footer';
 import Submission from './pages/submission';
 
 function App() {
