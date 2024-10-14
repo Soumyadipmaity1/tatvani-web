@@ -8,7 +8,7 @@ import Stories from "./pages/stories"
 import Contact from './pages/contact';
 import Poetry from './pages/poetry';
 import News from './pages/news';
-import Navbar from './components/Essentials/navbar';
+import Navbar from './components/Essentials/Navbar';
 import Footer from './components/Essentials/Footer';
 import Submission from './pages/submission';
 
