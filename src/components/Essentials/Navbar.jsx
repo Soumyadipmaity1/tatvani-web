@@ -20,15 +20,14 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
-  const activeClassName = "bg-[#00FF9C] px-2.5 pb-1 pt-[1px] font-semibold rounded-2xl";
+  const activeClassName = "bg-[#1c7636] px-2.5 lg:pb-1 text-white lg:pt-[1px] py-2 lg:py-0 font-semibold rounded-lg lg:rounded-2xl";
 
   return (
     <nav className="bg-white shadow-lg md:px-10 xl:px-20 2xl:px-32">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
           <div className="flex items-center">
-            <span className="text-3xl font-bold text-[#2bc288] pb-2 pt-0.5">Tatvani</span>
+            <span className="text-3xl font-bold text-[#1c7636] pb-2 pt-0.5">Tatvani</span>
           </div>
 
       {/* Search bar for mobile */}
@@ -55,7 +54,7 @@ const Navbar = () => {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  isActive ? activeClassName : "hover:bg-[#00FF9C] px-2.5 pb-1 pt-[1px] rounded-2xl font-semibold"
+                  isActive ? activeClassName : "hover:bg-[#1c7636] hover:text-white px-2.5 pb-1 pt-[1px] rounded-2xl font-semibold"
                 }
               >
                 {item.name}
@@ -81,7 +80,7 @@ const Navbar = () => {
                   to={item.path}
                   onClick={toggleMobileMenu}
                   className={({ isActive }) =>
-                    isActive ? `text-black text-lg font-semibold ${activeClassName}` : "hover:bg-[#00FF9C]"
+                    isActive ? `text-black text-lg font-semibold ${activeClassName}` : "hover:bg-[#1c7636] text-black"
                   }
                 >
                   {item.name}
