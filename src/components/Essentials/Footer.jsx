@@ -68,7 +68,6 @@ const BlogList = () => (
     <h3 className="font-semibold text-lg mb-4">Recent Post</h3>
     {blogPosts.map((post, idx) => (
       <div key={idx} className="mb-4">
-        {/* <img src={post.image} alt="Blog Post" className="w-16 h-16 object-cover mb-2" /> */}
         <a href="#" className="text-gray-600 hover:text-[#1c7636]">
           {post.title}
         </a>
@@ -94,9 +93,10 @@ const ContactList = () => (
 
 const Footer = () => {
   return (
-    <footer className="bg-[#e6e6ebb1] text-gray-800 py-10 px-32">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between w-full">
+    <footer className="bg-[#e6e6ebb1] text-gray-800 py-10 px-6 xl:px-24 2xl:px-32">
+      <div className="container mx-auto">
+        {/* Top bar */}
+        <div className="flex flex-col md:flex-row justify-between w-full mb-4">
           <div className="mb-4">
             <p className="text-[#1c7636] text-3xl font-bold">Tatvani</p>
           </div>
@@ -114,17 +114,18 @@ const Footer = () => {
         </div>
 
         <hr className="border-gray-400  mb-8" />
-
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+{/* linking */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           <LinkList title="Quick Links" items={quickLinks} />
           <LinkList title="Service Links" items={serviceLinks} />
           <BlogList />
           <ContactList />
         </div>
 
-        <div className="border-t border-gray-400 flex justify-between mt-8 pt-4 text-center">
-          <p className="">&copy; Mynimalistic 2024 | All Rights Reserved</p>
-          <div className="flex justify-center space-x-6 ">
+        {/* Bottom bar */}
+        <div className="border-t border-gray-400 flex flex-col md:flex-row justify-between items-center mt-8 pt-4 text-center">
+          <p className="mb-4 md:mb-0">&copy; Mynimalistic 2024 | All Rights Reserved</p>
+          <div className="flex space-x-6">
             <a href="#" className="text-gray-600 hover:text-gray-900">
               Terms & Condition
             </a>
