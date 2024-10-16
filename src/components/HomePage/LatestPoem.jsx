@@ -32,7 +32,7 @@ const poems = [
 
 const FeaturedPoems = () => {
   return (
-    <div className="min-h-[95vh] bg-gradient-to-b from-[#32658e]  xl:px-20 px-4 to-black py-16">
+    <div className=" bg-gradient-to-b from-[#32658e] sm:px-20 xl:px-10 2xl:px-20 px-4 to-black py-20">
       <div className="text-center mb-12">
         <h2 className="sm:text-5xl text-4xl text-bold sm:font-extrabold text-white mb-4 tracking-widest uppercase">
           Featured Poems
@@ -41,7 +41,7 @@ const FeaturedPoems = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {poems.map((poem, index) => (
             <div
               key={index}
@@ -72,7 +72,7 @@ const FeaturedPoems = () => {
                 <p className="text-sm mt-1 font-medium text-gray-400">{poem.date}</p>
                 
                 <div className="mt-4">
-                  <button className="bg-[#32658e] text-white font-semibold py-1.5 px-4 border-[#32658e] border-2 rounded-full hover:bg-transparent transition-colors duration-300">
+                  <button className="bg-[#32658e] text-white font-semibold py-1 px-4 border-[#32658e] border-2 rounded-full hover:bg-transparent transition-colors duration-300">
                     Read More
                   </button>
                 </div>

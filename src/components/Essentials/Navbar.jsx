@@ -41,7 +41,7 @@ const Navbar = () => {
     "bg-[#1c7636] px-2.5 lg:pb-1 text-white lg:pt-[1px] py-2 lg:py-0 font-semibold rounded-lg lg:rounded-2xl";
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 md:px-10 xl:px-6 2xl:px-32">
+    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 lg:px-10 xl:px-6 2xl:px-32">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center pr-14">
@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
 
           {/* Search bar for mobile */}
-          <div className="md:hidden w-4/5 mr-2">
+          <div className="lg:hidden w-3/5 sm:pl-6 mr-2">
             <input
               type="text"
               placeholder="Search..."
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile  bar*/}
-          <div className="md:hidden z-50 flex items-center">
+          <div className="lg:hidden z-50 flex items-center">
             <button onClick={toggleDarkMode} className="mr-4 text-xl rounded-full border border-gray-500 dark:border-gray-400 p-1.5">
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop */}
-          <div className="hidden md:flex space-x-2 items-center">
+          <div className="hidden lg:flex space-x-2 items-center">
             {menuItems.map((item) => (
               <NavLink
                 key={item.path}
@@ -89,13 +89,13 @@ const Navbar = () => {
           </div>
 
             {/* Dark Mode Toggle for Desktop */}
-            <button onClick={toggleDarkMode} className="text-xl hidden md:block ml-2 rounded-full border border-gray-500 dark:border-gray-400 p-2">
+            <button onClick={toggleDarkMode} className="text-xl hidden lg:block ml-2 rounded-full border border-gray-500 dark:border-gray-400 p-2">
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
 
           {/* Mobile Menu */}
           <div
-            className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white dark:bg-gray-900 text-black dark:text-white text-lg font-semibold py-1 text-center transition-transform duration-300 ease-in-out z-40 ${
+            className={`lg:hidden fixed top-0 left-0 w-full h-screen bg-white dark:bg-gray-900 text-black dark:text-white text-lg font-semibold py-1 text-center transition-transform duration-300 ease-in-out z-40 ${
               isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
@@ -127,7 +127,7 @@ const Navbar = () => {
           </div>
 
           {/* Search Bar for Desktop */}
-          <div className="hidden md:block w-[300px]">
+          <div className="hidden lg:block w-[300px]">
             <input
               type="text"
               placeholder="Search..."

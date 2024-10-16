@@ -5,6 +5,7 @@ import HomeSlider from "../components/HomePage/HomeSlider";
 import LatestNews from "../components/HomePage/LatestNews";
 import FeaturedPoem from "../components/HomePage/LatestPoem";
 import FeaturedStories from "../components/HomePage/LatestStories";
+import TestimonialSection from "../components/HomePage/TestimonialSection";
 
 export default function home() {
   return (
@@ -16,6 +17,7 @@ export default function home() {
 <FeaturedStories/>
 <LatestNews/>
 <AdvertisementSection/>
+<TestimonialSection/>
     </div>
   )
 }

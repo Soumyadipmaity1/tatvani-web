@@ -24,7 +24,7 @@ const news = [
 
 const LatestNews = () => {
   return (
-    <div className="min-h-[82vh] bg-gray-300 xl:px-20 px-4 py-16">
+    <div className=" bg-gray-300 2xl:px-20 sm:px-20 xl:px-10 px-4 py-20">
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold text-gray-800 mb-4 uppercase tracking-wider">
           Latest News
@@ -35,7 +35,7 @@ const LatestNews = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {news.map((item, index) => (
             <div
               key={index}
