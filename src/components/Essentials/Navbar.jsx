@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="flex items-center pr-14">
           <img src="./tatvani_logo.jpg" alt="logo" className=" sm:w-10 w-8 mr-2 rounded-full " border="0" />           
 
-            <span className="sm:text-3xl text-2xl font-bold text-[#1c7636] dark:text-white pb-2 pt-0.5">
+            <span className="sm:text-3xl text-2xl font-bold text-[#1c7636] dark:text-white lg:pb-2 pb-1 pt-0.5">
               Tatvani
             </span>
           </div>
