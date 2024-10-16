@@ -119,14 +119,6 @@ const Navbar = () => {
                 </NavLink>
               ))}
 
-              {/* Dark Mode Toggle for Mobile */}
-              {/* <button onClick={toggleDarkMode} className="text-xl rounded-full border border-gray-500 dark:border-gray-400  mx-auto">
-                {darkMode ? (
-                  <FaSun className="text-yellow-400" />
-                ) : (
-                  <FaMoon />
-                )}
-              </button> */}
             </div>
           </div>
 
