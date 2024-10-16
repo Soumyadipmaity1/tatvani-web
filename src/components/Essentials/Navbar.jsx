@@ -41,7 +41,7 @@ const Navbar = () => {
     "bg-[#1c7636] px-2.5 lg:pb-1 text-white lg:pt-[1px] py-2 lg:py-0 font-semibold rounded-lg lg:rounded-2xl";
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 md:px-10 xl:px-16 2xl:px-32">
+    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 md:px-10 xl:px-8 2xl:px-32">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center pr-16">
