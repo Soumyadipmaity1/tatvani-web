@@ -97,8 +97,9 @@ const Footer = () => {
       <div className="container mx-auto">
         {/* Top bar */}
         <div className="flex flex-col md:flex-row justify-between w-full mb-4">
-          <div className="mb-4">
-            <p className="text-[#1c7636] text-3xl font-bold">Tatvani</p>
+          <div className="mb-4 flex space-x-2 items-center">
+          <img src="./tatvani_logo.jpg" alt="logo" className=" w-12 rounded-full" border="0" />
+            <span className="text-[#1c7636] text-4xl font-bold">Tatvani</span>
           </div>
           <div className="flex space-x-4 h-9">
             {socialLinks.map((social, idx) => (
