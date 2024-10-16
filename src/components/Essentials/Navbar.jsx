@@ -41,11 +41,13 @@ const Navbar = () => {
     "bg-[#1c7636] px-2.5 lg:pb-1 text-white lg:pt-[1px] py-2 lg:py-0 font-semibold rounded-lg lg:rounded-2xl";
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 md:px-10 xl:px-8 2xl:px-32">
+    <nav className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 md:px-10 xl:px-6 2xl:px-32">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center pr-16">
-            <span className="text-3xl font-bold text-[#1c7636] dark:text-white pb-2 pt-0.5">
+          <div className="flex items-center pr-14">
+          <img src="./tatvani_logo.jpg" alt="logo" className=" sm:w-10 w-8 mr-2 rounded-full " border="0" />           
+
+            <span className="sm:text-3xl text-2xl font-bold text-[#1c7636] dark:text-white pb-2 pt-0.5">
               Tatvani
             </span>
           </div>
@@ -87,7 +89,7 @@ const Navbar = () => {
           </div>
 
             {/* Dark Mode Toggle for Desktop */}
-            <button onClick={toggleDarkMode} className="text-xl hidden md:block ml-4 rounded-full border border-gray-500 dark:border-gray-400 p-2">
+            <button onClick={toggleDarkMode} className="text-xl hidden md:block ml-2 rounded-full border border-gray-500 dark:border-gray-400 p-2">
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
 
@@ -98,8 +100,10 @@ const Navbar = () => {
             }`}
           >
             <div className="p-6 flex flex-col space-y-6">
-              <div className="flex items-center justify-center m-5">
-                <span className="text-3xl font-bold text-[#1c7636] dark:text-white">
+              <div className="flex-col flex items-center justify-center m-5">
+              <img src="./tatvani_logo.jpg" alt="logo" className=" mb-5 mt-4 rounded-full w-16" border="0" />            
+
+                <span className="text-4xl font-bold text-[#1c7636] dark:text-white">
                   Tatvani
                 </span>
               </div>
@@ -123,7 +127,7 @@ const Navbar = () => {
           </div>
 
           {/* Search Bar for Desktop */}
-          <div className="hidden md:block w-80">
+          <div className="hidden md:block w-[300px]">
             <input
               type="text"
               placeholder="Search..."
