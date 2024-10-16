@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
 
           {/* Search bar for mobile */}
-          <div className="md:hidden w-1/2 mx-4">
+          <div className="md:hidden w-4/5 mr-2">
             <input
               type="text"
               placeholder="Search..."
@@ -61,10 +61,10 @@ const Navbar = () => {
 
           {/* Mobile  bar*/}
           <div className="md:hidden z-50 flex items-center">
-            <button onClick={toggleDarkMode} className="mr-4 text-2xl">
+            <button onClick={toggleDarkMode} className="mr-4 text-xl rounded-full border border-gray-500 dark:border-gray-400 p-1.5">
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
-            <button onClick={toggleMobileMenu} className="focus:outline-none text-2xl">
+            <button onClick={toggleMobileMenu} className="focus:outline-none dark:text-white text-2xl">
               {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
           </div>
 
             {/* Dark Mode Toggle for Desktop */}
-            <button onClick={toggleDarkMode} className="text-xl ml-4 rounded-full border border-gray-500 dark:border-gray-400 p-2">
+            <button onClick={toggleDarkMode} className="text-xl hidden md:block ml-4 rounded-full border border-gray-500 dark:border-gray-400 p-2">
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
 
@@ -120,13 +120,13 @@ const Navbar = () => {
               ))}
 
               {/* Dark Mode Toggle for Mobile */}
-              <button onClick={toggleDarkMode} className="text-2xl mx-auto">
+              {/* <button onClick={toggleDarkMode} className="text-xl rounded-full border border-gray-500 dark:border-gray-400  mx-auto">
                 {darkMode ? (
                   <FaSun className="text-yellow-400" />
                 ) : (
                   <FaMoon />
                 )}
-              </button>
+              </button> */}
             </div>
           </div>
 
