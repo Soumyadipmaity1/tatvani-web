@@ -1,7 +1,13 @@
-import React from 'react'
+
+import ExclusiveStory from '../components/StoriesPage/ExclusiveStories'
+import StorySlider from '../components/StoriesPage/StorySlider'
 
 export default function stories() {
   return (
-    <div>stories</div>
+    <div>
+            <StorySlider/>
+
+      <ExclusiveStory/>
+    </div>
   )
 }
