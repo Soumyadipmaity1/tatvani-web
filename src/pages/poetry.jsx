@@ -1,6 +1,12 @@
+import ExclusivePoetry from "../components/PoetryPage/ExclusivePoetry";
+import PoetrySlider from "../components/PoetryPage/PoetrySlider";
 
 export default function poetry() {
   return (
-    <div>poetry</div>
+    <div>
+
+      <PoetrySlider/>
+      <ExclusivePoetry/>
+    </div>
   )
 }
