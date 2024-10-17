@@ -26,7 +26,7 @@ const ExclusiveStory = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-16">
+    <div className="bg-gray-50 py-16  px-5 sm:px-16">
       <div className="container mx-auto">
         <h2 className="text-5xl font-bold mb-12 text-gray-900 text-center">Exclusive Stories</h2>
 
