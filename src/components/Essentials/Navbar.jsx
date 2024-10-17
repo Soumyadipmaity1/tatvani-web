@@ -7,7 +7,7 @@ const Navbar = () => {
     return localStorage.getItem('theme') === 'dark';
   });
 
-  const toggleDarkMode = () => {    //toggle
+  const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
@@ -45,7 +45,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center pr-14">
-          <img src="./tatvani_logo.jpg" alt="logo" className=" sm:w-10 w-8 mr-2 rounded-full " border="0" />           
+            <img
+              src="./tatvani_logo.jpg"
+              alt="logo"
+              className="sm:w-10 w-8 mr-2 rounded-full"
+              border="0"
+            />
 
             <span className="sm:text-3xl text-2xl font-bold text-[#1c7636] dark:text-white lg:pb-2 pb-1 pt-0.5">
               Tatvani
@@ -61,17 +66,23 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Mobile  bar*/}
+          {/* Mobile  bar */}
           <div className="lg:hidden z-50 flex items-center">
-            <button onClick={toggleDarkMode} className="mr-4 text-xl rounded-full border border-gray-500 dark:border-gray-400 p-1.5">
+            <button
+              onClick={toggleDarkMode}
+              className="mr-4 text-xl rounded-full border border-gray-500 dark:border-gray-400 p-1.5"
+            >
               {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
             </button>
-            <button onClick={toggleMobileMenu} className="focus:outline-none dark:text-white text-2xl">
+            <button
+              onClick={toggleMobileMenu}
+              className="focus:outline-none dark:text-white text-2xl"
+            >
               {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
 
-          {/* Desktop */}
+          {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-2 items-center">
             {menuItems.map((item) => (
               <NavLink
@@ -88,10 +99,13 @@ const Navbar = () => {
             ))}
           </div>
 
-            {/* Dark Mode Toggle for Desktop */}
-            <button onClick={toggleDarkMode} className="text-xl hidden lg:block ml-2 rounded-full border border-gray-500 dark:border-gray-400 p-2">
-              {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
-            </button>
+          {/* Dark Mode Toggle for Desktop */}
+          <button
+            onClick={toggleDarkMode}
+            className="text-xl hidden lg:block ml-2 rounded-full border border-gray-500 dark:border-gray-400 p-2"
+          >
+            {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
+          </button>
 
           {/* Mobile Menu */}
           <div
@@ -101,8 +115,12 @@ const Navbar = () => {
           >
             <div className="p-6 flex flex-col space-y-6">
               <div className="flex-col flex items-center justify-center m-5">
-              <img src="./tatvani_logo.jpg" alt="logo" className=" mb-5 mt-4 rounded-full w-16" border="0" />            
-
+                <img
+                  src="./tatvani_logo.jpg"
+                  alt="logo"
+                  className=" mb-5 mt-4 rounded-full w-16"
+                  border="0"
+                />
                 <span className="text-4xl font-bold text-[#1c7636] dark:text-white">
                   Tatvani
                 </span>
@@ -122,7 +140,6 @@ const Navbar = () => {
                   {item.name}
                 </NavLink>
               ))}
-
             </div>
           </div>
 
