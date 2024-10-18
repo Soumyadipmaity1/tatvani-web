@@ -1,6 +1,6 @@
 import SubmissionForm from "../components/SubmissionPage/SubmissionForm";
 
-export default function submission() {
+export default function Submission() {
   return (
     <div className="dark:bg-gray-800">
 
