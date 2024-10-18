@@ -1,80 +1,81 @@
 
-const stories = [
+const poems = [
   {
-    title: "The Enchanted Forest",
-    author: "Sarah Connor",
-    date: "October 11, 2024",
-    category: "Adventure",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Story+Image+1",
-  },
-  {
-    title: "Mystery at the Manor",
-    author: "Tom Hardy",
+    title: "Whispers of the Night",
+    poet: "John Doe",
     date: "October 10, 2024",
-    category: "Mystery",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Story+Image+2",
+    category: "Nature",
+    imageUrl: "https://via.placeholder.com/400x300.png?text=Poem+Image+1",
   },
   {
-    title: "The Forgotten Island",
-    author: "Alice Brown",
+    title: "Echoes of the Heart",
+    poet: "Jane Smith",
     date: "October 9, 2024",
-    category: "Thriller",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Story+Image+3",
+    category: "Love",
+    imageUrl: "https://via.placeholder.com/400x300.png?text=Poem+Image+2",
   },
   {
-    title: "A Journey Beyond Time",
-    author: "Martin Lewis",
+    title: "Dreams Beyond",
+    poet: "Samuel Green",
     date: "October 8, 2024",
-    category: "Sci-Fi",
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Story+Image+4",
+    category: "Fantasy",
+    imageUrl: "https://via.placeholder.com/400x300.png?text=Poem+Image+3",
+  },
+  {
+    title: "The Silent Forest",
+    poet: "Emily Rose",
+    date: "October 7, 2024",
+    category: "Mystery",
+    imageUrl: "https://via.placeholder.com/400x300.png?text=Poem+Image+4",
   },
 ];
 
 const FeaturedStories = () => {
   return (
-    <div className=" bg-white xl:px-10 2xl:px-20 px-4 py-20">
+    <div className="  sm:px-20 xl:px-10 2xl:px-20 px-4 bg-white py-20">
       <div className="text-center mb-12">
-        <h2 className="text-5xl font-bold text-gray-800 mb-4 uppercase">
+        <h2 className="sm:text-5xl text-4xl text-bold sm:font-extrabold text-[#3d3b3a] mb-4 tracking-widest uppercase">
           Featured Stories
         </h2>
-        <p className="text-lg text-gray-500 tracking-wide">
-          Explore the latest adventures and mysteries
-        </p>
+        <p className="text-lg text-[#3d3b3a] tracking-wider">Latest & Magical Words</p>
       </div>
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {stories.map((story, index) => (
+          {poems.map((poem, index) => (
             <div
               key={index}
-              className="bg-gray-50 border border-gray-200 rounded-xl shadow-lg overflow-hidden group relative transition-transform duration-300"
+              className="relative bg-[#3d3b3a]  dark:bg-black  rounded-xl shadow-2xl overflow-hidden group transition-transform duration-300 transform hover:scale-105"
             >
-              <div className="h-56 overflow-hidden">
+              {/* Category */}
+              <span className="absolute top-4 left-4 bg-[#ff7f57] text-[#3d3b3a]  dark:text-black py-1 px-3 rounded-full text-sm tracking-wider shadow-lg z-10">
+                {poem.category}
+              </span>
+
+              <div className="h-60 overflow-hidden">
                 <img
-                  src={story.imageUrl}
-                  alt={story.title}
-                  className="w-full h-full object-cover transition-transform duration-500 transform group-hover:scale-105"
+                  src={poem.imageUrl}
+                  alt={poem.title}
+                  className="w-full h-full object-cover transition-transform duration-500 transform group-hover:scale-110"
                 />
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  {story.title}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="p-6 text-white relative z-10">
+                <h3 className="text-2xl font-bold text-[#ffff] group-hover:text-white transition-colors duration-300">
+                  {poem.title}
                 </h3>
-                <p className="text-sm text-gray-600">
-                  By: <span className="font-medium">{story.author}</span>
+                <p className="text-lg text-[#ffff] mt-2">
+                  By: <span className="font-medium text-[#ffff]">{poem.poet}</span>
                 </p>
-                <p className="text-xs text-gray-400 mt-1">{story.date}</p>
-
-                <div className="absolute top-0 right-0 mt-4 mr-4 bg-yellow-400 text-black px-2 py-1 text-xs rounded-full">
-                  {story.category}
+                <p className="text-sm mt-1 font-medium text-[#ffff]">{poem.date}</p>
+                
+                <div className="mt-4">
+                  <button className="bg-[#ff7f57]  hover:text-white text-[#3d3b3a]  dark:text-black font-semibold py-1 px-4 border-[#ff7f57] border-2 rounded-full hover:bg-transparent transition-colors duration-300">
+                    Read More
+                  </button>
                 </div>
-              </div>
-
-              <div className="absolute inset-0 bg-gray-900 bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                <button className="bg-white text-gray-800 font-bold py-2 px-6 rounded-full">
-                  Read More
-                </button>
               </div>
             </div>
           ))}

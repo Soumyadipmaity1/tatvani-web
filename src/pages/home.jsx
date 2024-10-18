@@ -13,9 +13,10 @@ export default function Home() {
       <HomeSlider/>
 <FeaturesSection/>
 <AboutSection/>
+<LatestNews/>
+
 <FeaturedPoem/>
 <FeaturedStories/>
-<LatestNews/>
 <AdvertisementSection/>
 
 {/* <TestimonialSection/> */}
