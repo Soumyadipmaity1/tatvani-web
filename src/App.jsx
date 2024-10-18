@@ -6,10 +6,10 @@ import About from './pages/about';
 import Stories from "./pages/stories"
 import Contact from './pages/contact';
 import Poetry from './pages/poetry';
-import News from './pages/news';
 import Navbar from './components/Essentials/Navbar';
 import Footer from './components/Essentials/Footer';
 import Submission from './pages/submission';
+import Article from "./pages/article"
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/poetry" element={<Poetry />} />
-        <Route path="/news" element={<News />} />
+<Route path="/article" element={<Article/>} />
         <Route path="/submission" element={<Submission />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/stories" element={<Stories/>} />
