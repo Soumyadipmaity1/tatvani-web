@@ -5,9 +5,9 @@ import HomeSlider from "../components/HomePage/HomeSlider";
 import LatestNews from "../components/HomePage/LatestNews";
 import FeaturedPoem from "../components/HomePage/LatestPoem";
 import FeaturedStories from "../components/HomePage/LatestStories";
-import TestimonialSection from "../components/HomePage/TestimonialSection";
+// import TestimonialSection from "../components/HomePage/TestimonialSection";
 
-export default function home() {
+export default function Home() {
   return (
     <div>
       <HomeSlider/>
@@ -17,7 +17,8 @@ export default function home() {
 <FeaturedStories/>
 <LatestNews/>
 <AdvertisementSection/>
-<TestimonialSection/>
+
+{/* <TestimonialSection/> */}
     </div>
   )
 }

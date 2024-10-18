@@ -8,27 +8,27 @@ const shops = [
     description: "A bustling local grocery store with a wide selection of fresh fruits, vegetables, and household essentials. Known for its customer-friendly service and quality produce sourced from local farmers.",
     mapLink: "https://goo.gl/maps/ABCStoreLink"
   },
-  {
-    name: "XYZ Hardware",
-    address: "456 Elm St, Springfield",
-    image: "https://via.placeholder.com/300",
-    description: "Your one-stop shop for all things DIY and home improvement. Whether you're fixing a pipe or building furniture, XYZ Hardware has tools and materials for every project.",
-    mapLink: "https://goo.gl/maps/XYZHardwareLink"
-  },
-  {
-    name: "Sunshine Bakery",
-    address: "789 Oak St, Springfield",
-    image: "https://via.placeholder.com/300",
-    description: "Sunshine Bakery is renowned for its handcrafted pastries, cakes, and breads. Using organic ingredients, this bakery offers an unforgettable experience with its fresh, oven-baked treats.",
-    mapLink: "https://goo.gl/maps/SunshineBakeryLink"
-  },
-  {
-    name: "Green Leaf Cafe",
-    address: "101 Pine St, Springfield",
-    image: "https://via.placeholder.com/300",
-    description: "A trendy cafe offering a variety of vegan, organic, and gluten-free options. Green Leaf Cafe is the perfect spot for coffee lovers and health-conscious diners alike.",
-    mapLink: "https://goo.gl/maps/GreenLeafCafeLink"
-  }
+  // {
+  //   name: "XYZ Hardware",
+  //   address: "456 Elm St, Springfield",
+  //   image: "https://via.placeholder.com/300",
+  //   description: "Your one-stop shop for all things DIY and home improvement. Whether you're fixing a pipe or building furniture, XYZ Hardware has tools and materials for every project.",
+  //   mapLink: "https://goo.gl/maps/XYZHardwareLink"
+  // },
+  // {
+  //   name: "Sunshine Bakery",
+  //   address: "789 Oak St, Springfield",
+  //   image: "https://via.placeholder.com/300",
+  //   description: "Sunshine Bakery is renowned for its handcrafted pastries, cakes, and breads. Using organic ingredients, this bakery offers an unforgettable experience with its fresh, oven-baked treats.",
+  //   mapLink: "https://goo.gl/maps/SunshineBakeryLink"
+  // },
+  // {
+  //   name: "Green Leaf Cafe",
+  //   address: "101 Pine St, Springfield",
+  //   image: "https://via.placeholder.com/300",
+  //   description: "A trendy cafe offering a variety of vegan, organic, and gluten-free options. Green Leaf Cafe is the perfect spot for coffee lovers and health-conscious diners alike.",
+  //   mapLink: "https://goo.gl/maps/GreenLeafCafeLink"
+  // }
 ];
 
 const AdvertisementSection = () => {
