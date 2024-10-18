@@ -24,23 +24,23 @@ const ProtectedRoute = ({ children }) => {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/">
         <Routes>
           {/* Public Pages */}
-          <Route path="/" element={<><Navbar /><Home /><Footer /></>} />
-          <Route path="/about" element={<><Navbar /><About /><Footer /></>} />
-          <Route path="/poetry" element={<><Navbar /><Poetry /><Footer /></>} />
-          <Route path="/article" element={<><Navbar /><Article /><Footer /></>} />
-          <Route path="/submission" element={<><Navbar /><Submission /><Footer /></>} />
-          <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
-          <Route path="/stories" element={<><Navbar /><Stories /><Footer /></>} />
+          <Route path="/" element={<><Navbar /><Home /><Footer /></>} exact />
+          <Route path="/about" element={<><Navbar /><About /><Footer /></>} exact />
+          <Route path="/poetry" element={<><Navbar /><Poetry /><Footer /></>} exact />
+          <Route path="/article" element={<><Navbar /><Article /><Footer /></>} exact />
+          <Route path="/submission" element={<><Navbar /><Submission /><Footer /></>} exact />
+          <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} exact />
+          <Route path="/stories" element={<><Navbar /><Stories /><Footer /></>} exact />
 
           {/* Admin Pages */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
-          <Route path="/admin/add-post" element={<ProtectedRoute><AddPostPage /></ProtectedRoute>} />
-          <Route path="/admin/add-advertise" element={<ProtectedRoute><AddAdvertisePage /></ProtectedRoute>} />
-          <Route path="/admin/review-posts" element={<ProtectedRoute><ReviewPostPage /></ProtectedRoute>} />
+          <Route path="/login" element={<Login />} exact />
+          <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} exact />
+          <Route path="/admin/add-post" element={<ProtectedRoute><AddPostPage /></ProtectedRoute>} exact />
+          <Route path="/admin/add-advertise" element={<ProtectedRoute><AddAdvertisePage /></ProtectedRoute>} exact />
+          <Route path="/admin/review-posts" element={<ProtectedRoute><ReviewPostPage /></ProtectedRoute>} exact />
         </Routes>
       </Router>
     </AuthProvider>
