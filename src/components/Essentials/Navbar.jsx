@@ -29,9 +29,9 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "News", path: "/news" },
+    { name: "Article", path: "/article" },
     { name: "Poetry", path: "/poetry" },
-    { name: "Short Stories", path: "/stories" },
+    { name: "Stories", path: "/stories" },
     { name: "About Us", path: "/about" },
     { name: "Submission", path: "/submission" },
     { name: "Contact", path: "/contact" },
