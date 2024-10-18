@@ -29,9 +29,9 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-[#c9e6e9] py-20 px-4 2xl:px-20 sm:px-20 xl:px-10">
+    <section className="bg-[#fef8c7] py-20 px-4 2xl:px-20 sm:px-20 xl:px-10">
       <div className="mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#007A8C] mb-8">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#3d3b3a] mb-8">
           Key Features
         </h2>
         <p className="text-lg md:text-xl text-[#3D4A4F] mb-12">
@@ -40,12 +40,12 @@ const FeaturesSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
           {features.map((feature) => (
-            <div key={feature.id} className="feature-card bg-white shadow-lg rounded-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-              <div className="icon mb-6 text-center text-5xl text-[#40c8c8]">
+            <div key={feature.id} className="feature-card bg-white shadow-lg rounded-lg p-6 transition-transform duration-300 hover:scale-105 hover:shadow-lg border border-black">
+              <div className="icon mb-6 text-center text-5xl text-[#3d3b3a]">
                 {feature.icon} 
               </div>
-              <h3 className="text-2xl font-bold text-[#8aefff] mb-4">{feature.title}</h3>
-              <p className="text-md text-[#c6efff]">{feature.description}</p>
+              <h3 className="text-2xl font-bold text-[#3d3b3a] mb-4">{feature.title}</h3>
+              <p className="text-md text-[#3d3b3a]">{feature.description}</p>
             </div>
           ))}
         </div>
