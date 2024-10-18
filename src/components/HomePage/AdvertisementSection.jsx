@@ -35,7 +35,7 @@ const AdvertisementSection = () => {
   return (
     <div className='py-20'> 
     <div className="text-center mb-12">
-    <h2 className="sm:text-5xl text-4xl text-bold sm:font-extrabold text-[#32658e] mb-4 tracking-widest uppercase">
+    <h2 className="sm:text-5xl text-4xl text-bold sm:font-extrabold text-[#3d3b3a] mb-4 tracking-widest uppercase">
 Advertisement    </h2>
     {/* <p className="text-lg text-[#32658e] tracking-wider">Local Shops</p> */}
   </div>
@@ -44,7 +44,7 @@ Advertisement    </h2>
       {shops.map((shop, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[#32658e] via-[#062947] to-[#32658e] text-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 transform hover:scale-95 hover:shadow-2xl"
+          className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[#fef8c7] to-[#fef8c7] text-white rounded-lg shadow-lg overflow-hidden transition-all duration-500 transform hover:scale-95 hover:shadow-lg border-2 border-[#3d3b3a]"
           style={{ minHeight: '300px' }}
         >
           <img
@@ -54,15 +54,15 @@ Advertisement    </h2>
           />
           <div className="p-6 flex flex-col justify-between w-full md:w-2/3 space-y-4">
             <div>
-              <h2 className="text-3xl font-extrabold mb-2">{shop.name}</h2>
-              <p className="text-lg text-yellow-200 font-semibold">{shop.address}</p>
-              <p className="mt-3 text-sm leading-relaxed">{shop.description}</p>
+              <h2 className="text-3xl text-[#3d3b3a] font-extrabold mb-2">{shop.name}</h2>
+              <p className="text-lg text-[#3d3b3a] font-semibold">{shop.address}</p>
+              <p className="mt-3 text-sm text-[#3d3b3a] leading-relaxed">{shop.description}</p>
             </div>
             <a
               href={shop.mapLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 text-blue-300 hover:text-blue-500 underline transition-colors duration-300"
+            className="mt-4 hover:text-[#000] text-[#000] hover:underline transition-colors duration-300"
             >
               View on Google Maps
             </a>
