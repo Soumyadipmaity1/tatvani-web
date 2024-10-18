@@ -1,5 +1,3 @@
-import React from 'react';
-
 const shops = [
   {
     name: "ABC Grocery Store",
