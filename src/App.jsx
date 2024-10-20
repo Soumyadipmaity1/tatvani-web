@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
 import Stories from './pages/stories';
