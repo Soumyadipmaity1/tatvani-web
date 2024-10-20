@@ -2,11 +2,9 @@ import { FaPlus } from "react-icons/fa";
 
 const AboutUsSection = () => {
   return (
-    <div className="bg-white py-12 lg:px-10 ">
+    <div className="bg-blue-50 dark:bg-gray-800 py-12 lg:px-10 rounded-3xl shadow-2xl">
       <div className="container mx-auto px-6">
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-
           <div className="relative grid grid-cols-2 grid-rows-2 gap-4">
             <div className="relative rounded-lg overflow-hidden">
               <img
@@ -24,7 +22,7 @@ const AboutUsSection = () => {
             </div>
 
             <div className="absolute inset-0 flex justify-center items-center z-10">
-              <div className="bg-red-600 text-white p-4 rounded-full shadow-lg">
+              <div className="bg-yellow-400 dark:bg-yellow-500 text-blue-900 dark:text-gray-800 p-4 rounded-full shadow-lg">
                 <FaPlus size={30} />
               </div>
             </div>
@@ -46,11 +44,11 @@ const AboutUsSection = () => {
           </div>
 
           <div>
-            <h2 className="text-red-600 font-bold uppercase mb-4">About Us</h2>
-            <h1 className="text-4xl font-extrabold text-gray-900 mb-6">
+            <h2 className="text-yellow-400 dark:text-yellow-500 font-bold uppercase mb-4">About Us</h2>
+            <h1 className="text-4xl font-extrabold text-blue-900 dark:text-yellow-400 mb-6">
               Empowering Your Digital Tomorrow
             </h1>
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-blue-800 dark:text-gray-300 mb-8 leading-relaxed">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. Lorem
               Ipsum is simply dummy text of the printing and typesetting
@@ -61,18 +59,11 @@ const AboutUsSection = () => {
             </p>
 
             <div className="flex justify-center">
-              <div className="flex items-center justify-center border-2 border-red-600 rounded-lg py-4 px-8 cursor-pointer hover:bg-red-600 transition-all duration-300">
-                {/* <FaTabletAlt size={30} className="mr-2 text-gray-800 hover:text-white" /> */}
-                <span className="font-bold text-xl text-gray-800 hover:text-white">
-                  About Mynimalistic{" "}
+              <div className="flex items-center text-blue-900 dark:text-yellow-500 hover:text-blue-900 dark:hover:text-gray-800 justify-center border-2 border-yellow-400 dark:border-yellow-500 rounded-lg py-4 px-8 cursor-pointer hover:bg-yellow-400 dark:hover:bg-yellow-500 transition-all duration-300">
+                <span className="font-bold text-xl ">
+                  About Mynimalistic
                 </span>
               </div>
-              {/* <div className="flex items-center justify-center border-2 border-red-600 rounded-lg p-4 hover:bg-red-600 transition-all duration-300">
-                <FaCogs size={30} className="mr-2 text-gray-800 hover:text-white" />
-                <span className="font-semibold text-gray-800 hover:text-white">
-                  AI Forge Labs
-                </span>
-              </div> */}
             </div>
           </div>
         </div>
