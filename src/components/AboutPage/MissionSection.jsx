@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaRocket, FaChartLine, FaHandshake } from 'react-icons/fa';
 
 const MissionSection = () => {
