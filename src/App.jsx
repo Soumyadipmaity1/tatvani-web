@@ -37,6 +37,7 @@ function App() {
 
           {/* Admin Pages */}
           <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<ProtectedRoute><Navigate to="/admin/dashboard" replace /></ProtectedRoute>} />
           <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
           <Route path="/admin/add-post" element={<ProtectedRoute><AddPostPage /></ProtectedRoute>} />
           <Route path="/admin/add-advertise" element={<ProtectedRoute><AddAdvertisePage /></ProtectedRoute>} />
