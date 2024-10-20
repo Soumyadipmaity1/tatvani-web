@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTwitter, FaGithub, FaQuoteLeft } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const TeamSection = () => {
   const teamMembers = [
