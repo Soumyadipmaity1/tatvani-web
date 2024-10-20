@@ -2,8 +2,8 @@ import { FaPlus } from "react-icons/fa";
 
 const AboutUsSection = () => {
   return (
-    <div className="bg-blue-50 dark:bg-gray-800 py-12 lg:px-10 rounded-3xl shadow-2xl">
-      <div className="container mx-auto px-6">
+    <div className="sm:bg-blue-50 bg-transparent sm:dark:bg-gray-800 py-12 lg:px-10 rounded-3xl sm:shadow-2xl">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative grid grid-cols-2 grid-rows-2 gap-4">
             <div className="relative rounded-lg overflow-hidden">
